@@ -22,7 +22,7 @@
 						<Text text="{/firstName}"/>
 						<Label text="{i18n>lastName}" class="sapUiTinyMarginTop"/>
 						<Text text="{/lastName}"/>
-						<Label text="{i18n>address}" class="sapUiTinyMarginTop"/>
+						<Label text="{i18n>address}" class="sapUiTinyMarginTop sapUiTinyMarinEnd"/>
 						<Text text="{/address/street}"/>
 						<Text text="{/address/city}"/>
 						<Text text="{/address/zip}"/>
