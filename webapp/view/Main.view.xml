@@ -1,0 +1,38 @@
+<mvc:View
+    controllerName="com.sap.databinding001.controller.Main"
+	xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+	xmlns="sap.m"
+	xmlns:l="sap.ui.layout"
+>
+	<Page
+        id="page"
+        title="{i18n>title}"
+    >
+		<!-- <Text text="My name is Faraz"/> -->
+		<!-- <Label text="Firt Name"></Label><Input value="{/firstName}"></Input><Label text="Last Name"></Label><Input value="{/lastName}"></Input>     -->
+		<content>
+			<Panel
+                headerText="{i18n>myInfo}"
+                class="sapUiResponsiveMargin"
+                width="auto">
+				<content>
+					<l:VerticalLayout>
+						<Label text="{i18n>firstName}" class="sapUiTinyMarginTop"/>
+						<Text text="{/firstName}"/>
+						<Label text="{i18n>lastName}" class="sapUiTinyMarginTop"/>
+						<Text text="{/lastName}"/>
+						<Label text="{i18n>address}" class="sapUiTinyMarginTop"/>
+						<Text text="{/address/street}"/>
+						<Text text="{/address/city}"/>
+						<Text text="{/address/zip}"/>
+						<Text text="{/address/country}"/>
+						<List items="{/hobbies}">
+							<StandardListItem title="{name}" description="{skill}"></StandardListItem>
+						</List>
+					</l:VerticalLayout>
+				</content>
+			</Panel>
+		</content>
+	</Page>
+</mvc:View>

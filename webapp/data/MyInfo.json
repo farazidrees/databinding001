@@ -1,0 +1,26 @@
+{
+    "firstName": "Faraz",
+    "lastName": "Khaja",
+    "city": "Melbourne",
+    "company": "SAP",
+    "address": {
+        "street": "10 Welford St",
+        "city": "Tarneit",
+        "zip": "3029",
+        "country": "Australia"
+    },
+    "hobbies": [
+        {
+            "name": "tennis",
+            "skill": "medium"
+        },
+        {
+            "name": "socces",
+            "skill": "low"
+        },
+        {
+            "name": "chess",
+            "skill": "low"
+        }
+    ]
+}
